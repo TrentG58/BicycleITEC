@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Basic Web page
+Use: web page template
+Author: Trent Grider
+School/Term: Southern Illinois University, Spring 2023
+Developed: February 19, 2023
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+    <title>Bicycle Sales</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Bicycle shop offering sales and rentals">
+    <meta name="keywords" content="bicycle, sales, rentals, service">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slicknav.css">
+    <link href="BikeStyle.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="Allez.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').slicknav();
+        });
+    </script>
+</head>
+<body class="page">
+    <!--Shop name and adress with discription-->
+    <header>
+        <h1>Bicycle Sales</h1>
+    </header>
+
+    <!--Top navigation Bar-->
+    <div class="menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="rentals.htm">Rentals</a></li>
+            <li><a href="sales.htm">Sales</a></li>
+            <li><a href="services.htm">Services</a></li>
+            <li><a href="contact.htm">About Us</a></li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <video controls>
+                <source src="AeroVideo.mp4" type="video/webm" class="video">
+            </video>
+            <p><strong>Now in stock the new Cannondale Systemsix</strong></p>
+        </div>
+    </main>
+    <!--Page Navigation-->
+    <footer>
+        <p>
+            <a href="index.htm">Home</a>
+            <a href="rentals.htm">Rentals</a>
+            <a href="sales.htm">Sales</a>
+            <a href="services.htm">Services</a>
+            <a href="contact.htm">Contact Us</a>
+        </p>
+        <p class="adress">Bicycle Shop 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+    </footer>
+</body>
+</html>

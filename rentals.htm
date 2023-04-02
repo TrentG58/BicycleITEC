@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Rental webpage
+Use: web page template
+Author: Trent Grider
+School/Term: Southern Illinois University, Spring 2023
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<title>Bicycle Rentals</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Bicycle shop offering sales and rentals">
+	<meta name="keywords" content="bicycle, sales, rentals, service">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="slicknav.css">
+	<link href="BikeStyle.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="Allez.jpg">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="jquery.slicknav.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.menu').slicknav();
+		});
+	</script>
+</head>
+<body class="page">
+	<!--Shop name and adress with discription-->
+	<header>
+		<h1>Bicycle Rentals</h1>
+	</header>
+
+	<!--Top navigation Bar-->
+	<div class="menu">
+		<ul>
+			<li><a href="index.htm">Home</a></li>
+			<li><a href="rentals.htm">Rentals</a></li>
+			<li><a href="sales.htm">Sales</a></li>
+			<li><a href="services.htm">Services</a></li>
+			<li><a href="contact.htm">About Us</a></li>
+		</ul>
+	</div>
+
+	<main>
+		<!--split column for street bikes and mountain bikes -->
+		<div class="row">
+			<div class="column">
+				<h2>Street Bikes</h2>
+				<div>
+					<h3> Triban RC 520</h3>
+					<img src="Triban.jpg" alt="Triban RC 520" class="BikeImages">
+					<p>The Triban RC520 gives you 11-speed 105 with a good gear range from its 50/34-tooth chainset and 11-32-tooth cassette. The bike comes stock with 28mm own brand tyres, but you can swap these out for rubber up to 36mm wide, which would add an extra dimension of plushness to the already comfortable and relaxed ride. You can add mudguards for all-weather riding and a rack for load lugging duties.</p>
+					<h4>$50/ Day or $250/ Week</h4>
+				</div>
+				<div>
+					<h3> Specialized Allez</h3>
+					<img src="Allez.jpg" alt="Specialized Allez" class="BikeImages">
+					<p>Specialized's stalwart entry level alloy road bike comes with a pedigree that stretches back for years and it gets some trickle-down tech from the brand's high end road bikes like an all-carbon fork and a frame with butted tubing to save weight, smooth welds, dropped seat stays and internal cable routing. There's lots of versatility built into the Allez, with rack and mudguard mounts, so you can use it for the commute as well as faster recreational rides. </p>
+					<h4>$75/ Day or $375/ Week</h4>
+				</div>
+			</div>
+			<div class="column">
+				<h2>Mountain Bikes</h2>
+				<div>
+					<h3>Ibis Ripmo V2 XT.</h3>
+					<img src="ripmo2.jpg" alt="Ibis Ripmo V2" class="BikeImages">
+					<p>The Ripmo V2 is an excellent aggressive trail bike with an amazing combination of uphill and downhill performance. This bike makes a lot of sense for the rider who wants a bike that climbs well without sacrificing performance on the way back down. This bike is supremely versatile, and we'd recommend it to just about anyone.</p>
+					<h4>$100/ Day or $500/ Week</h4>
+				</div>
+				<div>
+					<h3>Giant Stance 29 2</h3>
+					<img src="Stance.jpg" alt="Giant Stance 29 2" class="BikeImages">
+					<p>Giant is known for making excellent bikes at very competitive prices, and the Stance 29 2 is an excellent example. This complete bike costs roughly half the price of many carbon frames on its own, yet it performs impressively well out on the trail. This affordable trail bike rolls on 29-inch wheels with 120mm rear-wheel suspension and a 130mm travel fork.</p>
+					<h4>$50/ Day or $250/ Week</h4>
+				</div>
+			</div>
+		</div>
+		<!--additional rental options -->
+		<h1>We also offer helmet, padds, and clothing rental. Please visit our shop to see our current stock.</h1>
+		<!--terms for bike rental -->
+		<h2>Terms of Service</h2>
+		<div class="Terms">
+			Bicycles are rented out clean and in proper working condition and must be returned to the issuing agent in hand.
+			Helmets are recommended as part of the rental contract.
+			Bikes are maintained on a daily basis.
+			Customer agrees to return the bike in clean and undamaged condition to avoid any additional charges for the repair, maintenance or replacement.
+			Customer accepts the use of the equipment and accepts full responsibility for the care of the equipment while under his/her possession.
+			Damaged parts or components will be repaired/replaced at the shop’s discretion.
+		</div>
+	</main>
+	<!--Page Navigation-->
+	<footer>
+		<p>
+			<a href="index.htm">Home</a>
+			<a href="rentals.htm">Rentals</a>
+			<a href="sales.htm">Sales</a>
+			<a href="services.htm">Services</a>
+			<a href="contact.htm">Contact Us</a>
+		</p>
+		<p class="adress">1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+	</footer>
+</body>
+</html>

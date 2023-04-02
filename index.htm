@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Bicycle Shop
+Use: Bicycle Shop Website
+Author: Trent Grider
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+    <title>Bicycle Shop</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Bicycle shop offering sales and rentals">
+    <meta name="keywords" content="bicycle, sales, rentals, service">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slicknav.css">
+    <link href="BikeStyle.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="Allez.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.menu').slicknav();
+        });
+    </script>
+</head>
+<body class="page">
+    <!--Shop name and adress with discription-->
+    <header>
+        <h1>Bicycle Shop</h1>
+    </header>
+
+    <!--Top navigation Bar-->
+    <div class="menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">About Us</a></li>
+            </ul>
+    </div>
+        <main>
+            <p>We are a full service bicycle shop offering sales, service, and repairs.
+                <br> 
+                    We also have a full assortment of all your racing needs.
+                <br> 
+                <b>
+                    Visit us at our new location on campus.
+                </b> 
+                <a 
+                    href="https://www.siu.edu/">Visit SIU
+                </a>
+            </p>
+            <!--list of models we offer-->
+            <ul>
+                <li><a href="#" class="model">Triban RC 520 </a></li>
+                <li><a href="#" class="model">Specialized Allez</a></li>
+                <li><a href="#" class="model">Giant Contend SL</a></li>
+                <li><a href="#" class="model">Canyon Ultimate CF SL8 </a></li>
+                <li><a href="#" class="model">Colnago</a></li>
+            </ul>
+            <!--bicycle image for main page -->
+            <div class="picture">
+                <img src="Bicycles.jpg" alt="Bicycle" class="picture">
+                <!--img src="newBicycles.jpg" alt"new bicycle" class="rollimg"-->
+            </div>
+
+            <br><br><br>
+            <figcaption>
+                <strong>
+                    We won’t stop creating beautiful memories while we ride together.
+                </strong> 
+            </figcaption>
+
+            <h5>Join our mailing list to stay upto date on all your bicycle needs</h5>
+            <form id="form">
+                <input id="email" type="email" name="email" placeholder="Please enter your email" required>
+                <input type="submit" id="submit" value="Submit" class="btn" onclick="alert('Thank you for joining our mailing list')">
+            </form>
+        </main>
+        <!--Page Navigation-->
+        <footer>
+            <p>
+                <a href="index.htm">Home</a>
+                <a href="rentals.htm">Rentals</a>
+                <a href="sales.htm">Sales</a>
+                <a href="services.htm">Services</a>
+                <a href="contact.htm">Contact Us</a>
+            </p>
+            <p>Bicycle Shop 1234 W Main Street Carbondale, IL 62902 618-555-5555</p>
+        </footer>
+        <audio controls loop autoplay>
+            <source src="website.mp3" type="audio/mp3">
+        </audio>
+</body>
+</html>
